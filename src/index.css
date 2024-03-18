@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-triangle {
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+  }
+
+  @media (min-width: 648px) {
+    .on-hover:hover > * > .on-change-transition-1 {
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      transform: translate(-1rem);
+    }
+    .on-hover:hover > * > .on-change-transition-2 {
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      transform: translate(1rem) rotate(180deg);
+    }
+    .on-hover:hover > * > .on-change-transitionsquare-1 {
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      transform: translate(1rem);
+    }
+    .on-hover:hover > * > .on-change-transitionsquare-2 {
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      transform: translate(1rem);
+    }
+  }
+
+  .button-link:hover > .button-underline {
+    opacity: 1;
+  }
+
+  .animate-slide-right {
+    animation: slide-right 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes slide-right {
+    0% {
+      z-index: 100;
+      transform: translateX(100%);
+
+      opacity: 0;
+    }
+    80% {
+      transform: translateX(-5%);
+    }
+    100% {
+      transform: translate(0);
+
+      opacity: 1;
+    }
+  }
+  .animate-slide-top {
+    animation: slide-top 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes slide-top {
+    0% {
+      z-index: 100;
+      transform: translateY(-100%);
+
+      opacity: 0;
+    }
+    80% {
+      transform: translateY(5%);
+    }
+    100% {
+      transform: translate(0);
+
+      opacity: 1;
+    }
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(24 24 27);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+  transition: all 3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* background-image: linear-gradient(to bottom, #6366f1, #a855f7); */
+}
