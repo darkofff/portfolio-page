@@ -1,7 +1,7 @@
 import { useGeneral } from "../context/GeneralContext";
 
 function Message({ children, type }) {
-  const { currentProject, setCurrentProject, lang } = useGeneral();
+  const { currentProject, lang } = useGeneral();
 
   let move;
   if (currentProject === "contact") {
@@ -36,7 +36,7 @@ function Message({ children, type }) {
         </h1>
         <div className={`flex gap-5 `}>
           <div className="h-22 w-[2px] bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 opacity-40  ">
-            <p className="text-transparent">dfdsfdsdsadsa</p>
+            <p className="text-transparent">dfdsf</p>
           </div>
           <div className=" text-base sm:text-lg lg:text-xl">{children}</div>
         </div>

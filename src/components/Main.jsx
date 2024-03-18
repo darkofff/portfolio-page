@@ -6,20 +6,20 @@ import Logos from "./Logos";
 import ButtonLink from "./ButtonLink";
 
 function Main() {
-  const { lang, setLang } = useGeneral();
+  const { lang } = useGeneral();
   return (
     <main className=" flex h-fit flex-col justify-evenly space-y-4 bg-zinc-900 md:min-h-[80%] md:pl-8 lg:flex-row lg:items-center lg:space-x-8 lg:pl-16">
-      <div className="flex overflow-x-hidden   pl-1 lg:w-[65%] lg:items-center">
+      <div className="flex items-center   overflow-x-hidden pl-1 lg:w-[65%]">
         <Message type="contact">
           <p>
-            Email: janek.dzialowski@gmail.com{" "}
+            <span>Email: janek.dzialowski@gmail.com </span>
             <span
               onClick={() => {
                 navigator.clipboard.writeText("janek.dzialowski@gmail.com");
               }}
               className="cursor-pointer text-sm font-thin underline hover:text-zinc-400"
             >
-              {lang === "pl" ? "Skopiuj do schowka" : "Copy to clippboard"}
+              {lang === "pl" ? "Skopiuj do schowka" : "Copy to clipboard"}
             </span>
           </p>
           <ButtonLink to="https://linkedin.com/in/jan-działowski-a429b22ba">
