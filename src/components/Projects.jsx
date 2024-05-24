@@ -28,7 +28,7 @@ function Projects() {
                     <strong className="font-bold">'Local'</strong> - social
                     networking app
                   </span>
-                  <span>(the newest project)</span>
+                  <span>(most recent)</span>
                 </div>
               )}
             </li>

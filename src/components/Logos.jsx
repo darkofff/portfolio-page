@@ -6,6 +6,7 @@ function Logos() {
       <span className="flex  gap-1  sm:gap-2 ">
         <SingleLogo name="react" />
         <SingleLogo name="javascript" />
+        <SingleLogo name="typescript" />
         <SingleLogo name="tailwind" />
         <SingleLogo name="css" />
       </span>
