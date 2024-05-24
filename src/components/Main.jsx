@@ -48,12 +48,24 @@ function Main() {
           )}
           {lang === "en" && <p>Enjoy reviewing my projects ;) </p>}
         </Message>
+        <Message type="local">
+          <p>
+            {lang === "pl" &&
+              "Mój najnowszy projekt napisany w React, wciąż w trakcie tworzenia. Strona social media ze standardową funkcjonalnością jak dodawanie postów, logowanie/ rejestrowanie czy przeglądanie profili i dodawanie znajomych. Oprócz czystego Reacta wykorzystałem react-router, react-query, react-hook-form i inne pomniejsze biblioteki. Dodatkowo projekt napisany jest w typescript z użyciem tailwind.  "}
+            {lang === "en" &&
+              "Youtube clone wrote in React. Additionally react-router and youtube api v3 have been used. Stylized using css modules."}
+          </p>
+          <ProjectNav
+            site="https://local-private.vercel.app"
+            git="https://github.com/darkofff/social_networking_app"
+          />
+        </Message>
         <Message type="clone">
           <p>
             {lang === "pl" &&
-              "Mój najnowszy i jak dotąd najbardziej złożony projekt. Kopia Youtube napisana w React. Dodatkowo wykorzystałem react-router i youtube api v3. Stylizowany za pomocą css modules."}
+              "Kopia Youtube napisana w React. Dodatkowo wykorzystałem react-router i youtube api v3. Stylizowany za pomocą css modules."}
             {lang === "en" &&
-              "It's my most recent and most advanced project so far. Youtube clone wrote in React. Additionally react-router and youtube api v3 have been used. Stylized using css modules."}
+              "Youtube clone wrote in React. Additionally react-router and youtube api v3 have been used. Stylized using css modules."}
           </p>
 
           <ProjectNav

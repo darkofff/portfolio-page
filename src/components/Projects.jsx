@@ -12,11 +12,30 @@ function Projects() {
       <div className="flex gap-5 ">
         <div className="h-22 w-[2px] bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 opacity-40  "></div>
         <ul className="space-y-3 text-lg">
+          <ButtonLink onClick={() => setCurrentProject("local")}>
+            <li className="">
+              {lang === "pl" ? (
+                <div className="flex flex-col">
+                  <span>
+                    <strong className="font-bold">'Local'</strong> - strona
+                    społecznościowa
+                  </span>
+                  <span>(najnowszy projekt)</span>
+                </div>
+              ) : (
+                <div className="flex flex-col">
+                  <span>
+                    <strong className="font-bold">'Local'</strong> - social
+                    networking app
+                  </span>
+                  <span>(the newest project)</span>
+                </div>
+              )}
+            </li>
+          </ButtonLink>
           <ButtonLink onClick={() => setCurrentProject("clone")}>
             <li className="">
-              {lang === "pl"
-                ? "Klon Youtube (najnowszy projekt)"
-                : "Youtube clone (most recent)"}
+              {lang === "pl" ? "Klon Youtube" : "Youtube clone"}
             </li>
           </ButtonLink>
           <ButtonLink onClick={() => setCurrentProject("ecommerce")}>

@@ -8,10 +8,12 @@ function Message({ children, type }) {
     move = "-translate-x-[2px]";
   } else if (currentProject === "welcome") {
     move = "-translate-x-[calc(100%+2px)]";
-  } else if (currentProject === "clone") {
+  } else if (currentProject === "local") {
     move = "-translate-x-[calc(200%+2px)]";
-  } else if (currentProject === "ecommerce") {
+  } else if (currentProject === "clone") {
     move = "-translate-x-[calc(300%+2px)]";
+  } else if (currentProject === "ecommerce") {
+    move = "-translate-x-[calc(400%+2px)]";
   }
   return (
     <div className={`  h-fit w-full  p-1 transition-all duration-500 ${move}`}>
@@ -25,6 +27,7 @@ function Message({ children, type }) {
         <h1 className="animate-slide-top mb-5 w-full text-4xl font-thin tracking-widest sm:text-5xl md:text-[7vw] lg:text-7xl">
           {type === "contact" && (lang === "pl" ? "Kontakt" : "Contact info")}
           {type === "welcome" && (lang === "pl" ? "Witaj" : "Welcome")}
+          {type === "local" && (lang === "pl" ? "Local " : "Local")}
           {type === "clone" &&
             (lang === "pl" ? "Klon Youtube " : "Youtube clone")}
           {type === "ecommerce" && (
