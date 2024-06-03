@@ -51,9 +51,9 @@ function Main() {
         <Message type="local">
           <p>
             {lang === "pl" &&
-              "Mój najnowszy projekt napisany w React, wciąż w trakcie tworzenia. Strona social media ze standardową funkcjonalnością jak dodawanie postów, logowanie/ rejestrowanie czy przeglądanie profili i dodawanie znajomych. Oprócz czystego Reacta wykorzystałem react-router, react-query, react-hook-form i inne pomniejsze biblioteki. Dodatkowo projekt napisany jest w typescript z użyciem tailwind. Za funkcje backend/database odpowiada Supabase (darmowa alternatywa dla firebase)."}
+              "Mój najnowszy projekt napisany w React. Strona social media ze standardową funkcjonalnością jak dodawanie postów, logowanie/ rejestrowanie czy przeglądanie profili i dodawanie znajomych. Oprócz czystego Reacta wykorzystałem react-router, react-query, react-hook-form i inne pomniejsze biblioteki. Dodatkowo projekt napisany jest w typescript z użyciem tailwind. Za funkcje backend/database odpowiada Supabase (darmowa alternatywa dla firebase)."}
             {lang === "en" &&
-              "Local is my most recent React based project. It's still in stage of developement. It has all the common functionalities found in social media apps. You can create your own profile, login, add posts, search other profiles and more. Beside pure React  react-router, react-query, react-hook-form and other minor libraries are used. Additionally project utilizes TypeScript and Tailwind. Backend/database functionalities are provided by Supabase (free firebase alternative).  "}
+              "Local is my most recent React based project. It has all the common functionalities found in social media apps. You can create your own profile, login, add posts, search other profiles and more. Beside pure React  react-router, react-query, react-hook-form and other minor libraries are used. Additionally project utilizes TypeScript and Tailwind. Backend/database functionalities are provided by Supabase (free firebase alternative).  "}
           </p>
           <ProjectNav
             site="https://local-private.vercel.app"
